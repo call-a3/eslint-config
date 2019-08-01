@@ -1,6 +1,6 @@
 {
   "name": "@call-a3/eslint-config",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "The eslint config preferred by Adriaan Callaerts",
   "main": "index.js",
   "scripts": {
