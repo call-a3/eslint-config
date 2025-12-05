@@ -2,45 +2,46 @@
   "name": "@call-a3/eslint-config",
   "version": "1.1.1",
   "description": "The eslint config preferred by Adriaan Callaerts",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo 'No tests in place yet for this shareable eslint config'",
-    "semantic-release": "semantic-release"
-  },
+  "homepage": "https://github.com/call-a3/eslint-config#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/call-a3/eslint-config.git"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
+  "bugs": {
+    "url": "https://github.com/call-a3/eslint-config/issues"
+  },
+  "license": "MIT",
   "author": {
     "name": "Adriaan Callaerts",
     "email": "adriaan.callaerts@gmail.com",
     "url": "https://www.adriaan.me"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/call-a3/eslint-config/issues"
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No tests in place yet for this shareable eslint config'",
+    "semantic-release": "semantic-release"
   },
-  "homepage": "https://github.com/call-a3/eslint-config#readme",
   "peerDependencies": {
-    "eslint": ">=6.0.1",
-    "eslint-plugin-prettier": ">=3.0.0",
-    "eslint-plugin-standard": ">=4.0.0"
+    "eslint": ">=7.32.0",
+    "eslint-plugin-prettier": ">=4.0.0",
+    "eslint-plugin-standard": ">=4.1.0"
   },
   "dependencies": {
-    "babel-eslint": ">=10.0.2",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-config-standard": "^14.1.0"
+    "@babel/eslint-parser": "^7.15.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^5.0.0",
-    "@semantic-release/git": "^9.0.0",
-    "semantic-release": "^17.0.0"
+    "@call-a3/semantic-release": "^1.0.0-rc.2"
   },
   "release": {
+    "branches": [
+      "main"
+    ],
     "tagFormat": "${version}",
     "plugins": [
       "@semantic-release/commit-analyzer",

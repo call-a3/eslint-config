@@ -1,35 +1,35 @@
 module.exports = {
-  plugins: ['prettier', 'standard'],
-  extends: ['standard', 'plugin:prettier/recommended', 'prettier/standard'],
-  parser: 'babel-eslint',
+  plugins: ["prettier", "standard"],
+  extends: ["standard", "plugin:prettier/recommended", "prettier/standard"],
+  parser: "@babel/eslint-parser",
   parserOptions: {
-    sourceType: 'module',
+    sourceType: "module",
     ecmaVersion: 6,
     ecmaFeatures: {
-      impliedStrict: true
-    }
+      impliedStrict: true,
+    },
   },
 
   rules: {
-    'prettier/prettier': [
-      'error',
+    "prettier/prettier": [
+      "error",
       {
         singleQuote: true,
-        trailingComma: 'all',
-        semi: false
+        trailingComma: "all",
+        semi: false,
       },
       {
-        usePrettierrc: false
-      }
-    ]
+        usePrettierrc: false,
+      },
+    ],
   },
 
   overrides: [
     {
       files: ["{spec,test}.{js,jsx}", "*.{spec,test}.{js,jsx}"],
       env: {
-        jest: true
-      }
+        jest: true,
+      },
     },
-  ]
-}
+  ],
+};

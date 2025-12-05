@@ -1,16 +1,15 @@
 # @call-a3/eslint-config
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/call-a3/eslint-config.svg)](https://greenkeeper.io/)
-
 This is my shared eslint config.
 It basically combines the prettier and standard plugins to have best-of-both rules and functionality.
 I like the validation rules that standard provides (and the avoidance of bike-shedding over them),
 but I prefer the formatting that prettier offers, so that's why I combine the two.
 
 Use it like this:
+
 ```json
 {
-    "extends": "@call-a3"
+  "extends": "@call-a3"
 }
 ```
 
